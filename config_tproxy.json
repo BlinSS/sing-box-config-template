@@ -7,7 +7,7 @@
     
     "experimental": {
       "clash_api": {
-        "external_controller": "0.0.0.0:9095",
+        "external_controller": "0.0.0.0:9090",
         "external_ui": "/etc/sing-box/ui",
         "secret": "",
         "external_ui_download_url": "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
@@ -23,9 +23,9 @@
     
     "dns": {
       "servers": [
-        {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🚀 节点选择"},
-        {"tag": "localDns", "address": "223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"},
-        {"tag": "defaultDns", "address": "223.5.5.5", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"}
+        {"tag": "proxyDns", "address": "https://1.0.0.1/dns-query", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🚀 节点选择"},
+        {"tag": "localDns", "address": "223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
+        {"tag": "defaultDns", "address": "223.5.5.5", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
       ],
       "rules": [
         { "outbound": "any", "server": "defaultDns", "disable_cache": true },
@@ -35,7 +35,7 @@
         { "rule_set": "geosite-geolocation-!cn", "server": "proxyDns" }
       ],
       "final": "localDns",
-      "strategy": "ipv4_only"
+      "strategy": "prefer_ipv6"
     },
   
     "inbounds": [
@@ -57,7 +57,7 @@
     ],
   
      "outbounds": [
-      { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },
+      { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "🎯 全球直连"] },
       { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },
       { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },
       { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换"] },

@@ -1,4 +1,3 @@
-
 {
   "log": {
     "disabled": false,
@@ -21,12 +20,12 @@
     "store_fakeip": false
     }
   },
-  
+
   "dns": {
     "servers": [
-      {"tag": "proxyDns", "address": "https://8.8.4.4/dns-query", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🚀 节点选择"},
-      {"tag": "localDns", "address": "udp://223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
-      {"tag": "defaultDns", "address": "udp://223.5.5.5", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
+      {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🚀 节点选择"},
+      {"tag": "localDns", "address": "223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
+      {"tag": "defaultDns", "address": "223.5.5.5", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
     ],
     "rules": [
       { "outbound": "any", "server": "defaultDns", "disable_cache": true },
@@ -39,30 +38,33 @@
     "strategy": "prefer_ipv6"
   },
 
-    "inbounds": [
-    {
-      "type": "tun",
-      "address": "172.19.0.1/30",
-      "mtu": 9000,
-      "auto_route": true,
-      "sniff": true,
-      "stack": "system",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 2080
-        }
+"inbounds": [
+  {
+    "type": "tun",
+    "address": "172.19.0.1/30",
+    "mtu": 9000,
+    "auto_route": true,
+    "auto_redirect": true,
+    "strict_route": true,
+    "stack": "system",
+    "sniff": true,
+    "platform": {
+      "http_proxy": {
+        "enabled": true,
+        "server": "127.0.0.1",
+        "server_port": 2080
       }
-    },
-    {
-      "type": "mixed",
-      "listen": "127.0.0.1",
-      "listen_port": 2080,
-      "sniff": true,
-      "users": []
     }
-  ],
+  },
+  {
+    "type": "mixed",
+    "listen": "127.0.0.1",
+    "listen_port": 2080,
+    "sniff": true,
+    "users": []
+  }
+],
+
 
   "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换", "♻️ 自动选择", "🎯 全球直连"] },

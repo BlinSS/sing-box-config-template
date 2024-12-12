@@ -23,7 +23,7 @@
 
   "dns": {
     "servers": [
-      {"tag": "proxyDns", "address": "https://8.8.4.4/dns-query", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "♻️ 自动选择"},
+      {"tag": "proxyDns", "address": "https://8.8.4.4/dns-query", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🚀 节点选择"},
       {"tag": "localDns", "address": "223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
       {"tag": "defaultDns", "address": "223.5.5.5", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
     ],
@@ -41,14 +41,7 @@
 "inbounds": [
   {
     "type": "tun",
-    "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
-    ],
-    "route_exclude_address": [
-        "10.0.0.0/16",
-        "fd90::/7"
-    ],
+    "address": "172.19.0.1/30",
     "mtu": 9000,
     "auto_route": true,
     "auto_redirect": true,
@@ -58,14 +51,14 @@
     "platform": {
       "http_proxy": {
         "enabled": true,
-        "server": "::1",
+        "server": "127.0.0.1",
         "server_port": 2080
       }
     }
   },
   {
     "type": "mixed",
-    "listen": "::1",
+    "listen": "127.0.0.1",
     "listen_port": 2080,
     "sniff": true,
     "users": []

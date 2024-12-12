@@ -64,37 +64,32 @@
   ],
 
   "outbounds": [
-    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["节点名字1", "节点名字2"] },
-    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["节点名字1", "节点名字2"] },
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["CF-Vles"] },
+    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["CF-Vles"] },
     { "tag": "🎯 全球直连", "type": "direct" },
     { "tag": "dns-out", "type": "dns" },
        {
-      "tag": "节点名字1",
-      "type": "hysteria2",
-      "server": "154.204.183.217",
-      "server_port": 60449,
-      "password": "c33a010e-b029-4bad-889d-17a5103949a8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "节点名字2",
-      "type": "vmess",
-      "server": "154.204.183.217",
-      "server_port": 8880,
-      "uuid": "c33a010e-b029-4bad-889d-17a5103949a8",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "www.bing.com"
-        },
-        "path": "/c33a010e-b029-4bad-889d-17a5103949a8-vm"
-      }
+      "tag": "CF-Vles",
+      "type": "vless",
+      "name": "CF_V8_usa.visa.com_443",
+      "server": "usa.visa.com",
+      "port": 443,
+      "uuid": "9aa9714a-c934-4c8c-aa2e-0b16da13bfce",
+      "tls": true,
+      "sni": "ygkkk-vless-37s.pages.dev",
+      "client-fingerprint": "randomized",
+      "skip-cert-verify": false,
+      "network": "ws",
+      "ws-opts": {
+          "headers": {
+              "Host": "ygkkk-vless-37s.pages.dev"
+          },
+          "path": "/?ed=2560"
+      },
+      "_subName": "CF-Vless",
+      "_subDisplayName": "CF-Vless",
+      "tfo": true,
+      "fast-open": true
     }
   ],
   

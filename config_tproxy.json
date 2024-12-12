@@ -42,14 +42,14 @@
       {
         "type": "tproxy",
         "tag": "tproxy-in",
-        "listen": "0.0.0.0",
+        "listen": "::",
         "listen_port": 7895,
         "sniff": true,
         "sniff_override_destination": false
       },
       {
         "type": "mixed",
-        "listen": "127.0.0.1",
+        "listen": "::1",
         "listen_port": 2080,
         "sniff": true,
         "users": []

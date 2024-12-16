@@ -23,9 +23,9 @@
     
     "dns": {
       "servers": [
-        {"tag": "proxyDns", "address": "udp://127.0.0.1:5335", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
-        {"tag": "localDns", "address": "udp://127.0.0.1:6053", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
-        {"tag": "defaultDns", "address": "udp://127.0.0.1:6053", "address_strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
+        {"tag": "proxyDns", "address": "tcp://127.0.0.1:5335", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv4", "detour": "🎯 全球直连"},
+        {"tag": "localDns", "address": "tcp://127.0.0.1:6053", "address_resolver": "defaultDns", "address_strategy": "prefer_ipv4", "detour": "🎯 全球直连"},
+        {"tag": "defaultDns", "address": "tcp://127.0.0.1:6053", "address_strategy": "prefer_ipv4", "detour": "🎯 全球直连"}
       ],
       "rules": [
         { "outbound": "any", "server": "defaultDns", "disable_cache": true },
@@ -35,7 +35,7 @@
         { "rule_set": "geosite-geolocation-!cn", "server": "proxyDns" }
       ],
       "final": "localDns",
-      "strategy": "prefer_ipv6"
+      "strategy": "prefer_ipv4"
     },
   
     "inbounds": [
@@ -45,7 +45,7 @@
         "listen": "0.0.0.0",
         "listen_port": 7895,
         "sniff": true,
-        "sniff_override_destination": false
+        "sniff_override_destination": true
       },
       {
         "type": "mixed",

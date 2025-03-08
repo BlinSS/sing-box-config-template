@@ -10,7 +10,7 @@
       "external_controller": "0.0.0.0:9090",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://ghfast.top/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://ghfast.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🎯 全球直连",
       "default_mode": "rule"
     },
@@ -25,8 +25,8 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "address": "127.0.0.1:6053", "detour": "🎯 全球直连"},
-     {"tag": "dns_proxy", "address": "127.0.0.0.1:5335", "detour": "🎯 全球直连"}
+     {"tag": "dns_direct", "address": "127.0.0.1:6553", "address_strategy": "prefer_ipv6", "strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
+     {"tag": "dns_proxy", "address": "127.0.0.1:5335", "address_strategy": "prefer_ipv6", "strategy": "prefer_ipv6", "detour": "🎯 全球直连"}
    ],
    "rules": 
    [
@@ -37,6 +37,7 @@
      {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
    ],
    "final": "dns_proxy",
+   "strategy": "prefer_ipv6"
 },
 
 "inbounds": [

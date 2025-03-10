@@ -112,7 +112,7 @@
         "strict_route": true,
         "endpoint_independent_nat": false,
         "stack": "system",
-        "route_exclude_address_set": ["geoip-cn"],
+        "route_exclude_address_set": ["geoip_cn"],
         "exclude_package": ["com.android.captiveportallogin"]
       },
       {
@@ -146,7 +146,7 @@
           {
             "action": "include",
             "keywords": [
-              "🇯🇵|日本|JP|Japan|🇰🇷|韩国|KR|South Korea|🇹🇼|台湾|TW|Taiwan|🇸🇬|新加坡|SG|Singapore"
+              "🇺🇸|us|ch|br|tw|eu|my"
             ]
           }
         ],

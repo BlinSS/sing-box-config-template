@@ -94,7 +94,7 @@
       "strict_route": true,
       "stack": "system",
       "route_exclude_address": ["10.0.0.0/16", "fd80::/7"],
-      "route_exclude_address_set": ["geoip-cn"]
+      "route_exclude_address_set": ["geoip_cn"]
     },
     {
       "type": "mixed",

@@ -271,7 +271,7 @@
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇯🇵|日本|JP|Japan"]
+          "keywords": ["🇺🇸|us|ch|br|tw|eu|my"]
         }
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -301,7 +301,7 @@
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇹🇼|台湾|TW|Taiwan"]
+          "keywords": ["🇺🇸|us|ch|br|tw|eu|my"]
         }
       ],
       "url": "http://www.gstatic.com/generate_204",

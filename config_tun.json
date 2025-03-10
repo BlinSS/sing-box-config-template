@@ -26,7 +26,7 @@
      "servers": 
      [
        {"tag": "dns_direct", "address": "127.0.0.1:6053", "address_strategy": "prefer_ipv6", "strategy": "prefer_ipv6", "detour": "🎯 全球直连"},
-       {"tag": "dns_proxy", "address": "https://8.8.4.4/dns-query", "address_strategy": "prefer_ipv6", "strategy": "prefer_ipv6", "detour": ""♻️ 自动选择"}
+       {"tag": "dns_proxy", "address": "https://8.8.4.4/dns-query", "address_strategy": "prefer_ipv6", "strategy": "prefer_ipv6", "detour": "♻️ 自动选择"}
      ],
      "rules": 
      [

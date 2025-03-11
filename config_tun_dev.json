@@ -65,7 +65,7 @@
       },
       {
         "type": "logical",
-        "mode": "and",
+        "mode": "or",
         "rules": [
           {
             "rule_set": "geosite_geolocation-!cn",

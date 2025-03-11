@@ -122,8 +122,7 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "🌏 日韩台新",
@@ -139,8 +138,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "📌 单选节点",
@@ -153,8 +152,7 @@
             "剩余|流量|raffic|有效|时间|到期|xpire|地址|网址|官网|自动|最优|最快"
           ]
         }
-      ],
-      "interrupt_exist_connections": true
+      ]
     },
     {
       "tag": "📥 Downloader",
@@ -169,8 +167,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "🎮 Game",
@@ -185,8 +183,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "🔎 Google",
@@ -201,8 +199,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "☁️ OneDrive",
@@ -217,8 +215,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "🤖 OpenAI",
@@ -233,8 +231,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "🪟 Microsoft",
@@ -249,8 +247,8 @@
         "🇹🇼 台湾节点",
         "🇸🇬 新加坡节点",
         "🇺🇸 美国节点"
-      ],
-      "interrupt_exist_connections": true
+      ]
+      
     },
     {
       "tag": "🇭🇰 香港节点",
@@ -264,8 +262,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🇯🇵 日本节点",
@@ -279,8 +277,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🇰🇷 韩国节点",
@@ -294,8 +292,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🇹🇼 台湾节点",
@@ -309,8 +307,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🇸🇬 新加坡节点",
@@ -324,8 +322,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🇺🇸 美国节点",
@@ -339,8 +337,8 @@
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 10,
-      "interrupt_exist_connections": true
+      "tolerance": 10
+      
     },
     {
       "tag": "🐢 直连",

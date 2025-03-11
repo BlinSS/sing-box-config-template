@@ -98,6 +98,7 @@
       "strict_route": true,
       "endpoint_independent_nat": false,
       "stack": "system",
+      "route_exclude_address_set": ["geoip_cn"],
       "exclude_package": [
         "com.android.captiveportallogin"
       ]

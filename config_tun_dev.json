@@ -54,6 +54,8 @@
       "stack": "system",
       "mtu": 1400,
       "auto_route": true,
+      "route_exclude_address": [ "10.0.0.0/16", "fd90::/7"],
+      "route_exclude_address_set": ["geoip-cn"],
       "platform": {
         "http_proxy": {"enabled": true, "server": "127.0.0.1", "server_port": 7890}
       }

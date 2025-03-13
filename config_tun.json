@@ -25,9 +25,8 @@
  {
    "servers": 
    [
-     {"tag": "dns_direct", "address": "https://dns.alidns.com/dns-query", "address_resolver": "本地 DNS", "detour": "🎯 全球直连"},
-     {"tag": "dns_proxy", "address": "https://dns.google/dns-query", "address_resolver": "本地 DNS", "detour": "♻️ 自动选择"},
-     {"tag": "本地 DNS", "address": "223.5.5.5", "detour": "🎯 全球直连"}
+     {"tag": "dns_direct", "address": "127.0.0.1:6053", "address_resolver": "本地 DNS", "detour": "🎯 全球直连"},
+     {"tag": "dns_proxy", "address": "127.0.0.1:5335", "address_resolver": "本地 DNS", "detour": "🎯 全球直连"},
    ],
    "rules": 
    [

@@ -22,7 +22,7 @@
   "dns": {
     "fakeip": {"enabled": true, "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"},
     "servers": [
-      {"tag": "proxyDns", "address": "tls://8.8.4.4", "address_resolver": "localDns", "address_strategy": "refer_ipv6", "detour": "节点选择"},
+      {"tag": "proxyDns", "address": "tls://8.8.4.4", "address_resolver": "localDns", "address_strategy": "prefer_ipv6", "detour": "节点选择"},
       {"tag": "localDns", "address": "127.0.0.1:6053", "detour": "全球直连"},
       {"tag": "fakeip", "address": "fakeip"}
     ],

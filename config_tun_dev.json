@@ -20,7 +20,6 @@
       {
         "tag": "tun-in",
           "type": "tun",
-          "interface_name": "singbox",
           "address": [ "172.19.0.1/30", "fdfe:2952:8964::1/126"],
           "stack": "mixed",
           "auto_route": true,

@@ -26,7 +26,7 @@
    "servers": 
    [
      {"tag": "dns_direct", "address": "218.203.59.216", "address_resolver": "本地 DNS", "detour": "🎯 全球直连"},
-     {"tag": "dns_proxy", "address": "tls://8.8.4.4", "address_resolver": "本地 DNS", "detour": ["♻️ 自动选择"}
+     {"tag": "dns_proxy", "address": "tls://8.8.4.4", "address_resolver": "本地 DNS", "detour": ["♻️ 自动选择"]}
    ],
    "rules": 
    [
